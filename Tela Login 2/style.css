@@ -1,0 +1,14 @@
+. { /*RESET do Navegador para colocar as medidas reais de cada um*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   display: flex; /*Coloca como em Colunas*/
+   border: solid 2px red;
+   align-items: center; /*Alinha tudo bem no centro da tela*/
+   justify-content: center; /*Alinha Horizontalmente*/
+   height: 100vh; /*Para o ALIGN-ITEMs funcionar, precisa definir como tela inteira*/
+}
+
