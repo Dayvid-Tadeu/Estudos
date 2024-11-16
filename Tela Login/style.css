@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Flex Conatainer*/
+body {
+    font-family: "Montserrat";
+    color: #404040;
+    display: flex; /*Ajuda a colocar centralizado*/
+    height: 100vh;/*Viewport Height - Força o elemento tem o tamanho da pág. Inteira*/
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fundo.jpg);
+    background-size: auto; /*A Imagem Preenche a tela*/
+    background-position: 65%; /*A Imagem fica Responsiva*/
+}
+/*Flex child*/
+form {
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;/*Arredonda os cantos da caixa*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+button {
+    padding: 15px;
+    align-self: center; /*Centraliza o botão*/
+    width: 160px;
+    border-radius: 30px; /*Arredonda o botão*/
+   /* background-color: #3393c1;*/
+    background-image:linear-gradient(#256a8a, #3393c1);/*GRadiente de cor que começa com uma e termina em outra*/
+    border: solid 1px #256a8a;
+    border-right-width: 4px;/*Borda a esquerda do botão*/
+    border-bottom-width: 4px;/*Borda abaixo do botão*/
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none; /*Retira a borda*/
+    background-color: #f1f1f1; /*Coloca a cor de fundo na borda*/
+}
+
+a {
+    color: rgb(0, 157, 255);
+}
+
+.barra-horizontal {
+    background-color: #f87842;
+    height: 5px;
+    width: 160px;
+}
+
+.campo-input {
+    /*Flex Container*/
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /*Espaçamento entre os labels e as caixas*/
+}
+
+.lembra-me {
+    /*Flex Container*/
+    display: flex;
+    gap: 5px; /*Espaçamento entre a caixinha e o Lembra-me*/
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.esqueceu-senha {
+    text-align: center;
+}
+
+/*https://www.hashtagtreinamentos.com/formulario-de-login-em-html-e-css?gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSK1yzbS01cG2Uc04D5j6H_DyMjkGrozJDRWy0lNqX6FfdaIP7SSQGQaAtKTEALw_wcB*/
