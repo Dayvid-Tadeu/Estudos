@@ -1,14 +1,103 @@
-. { /*RESET do Navegador para colocar as medidas reais de cada um*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.{ /*RESET do Navegador para colocar as medidas reais de cada um*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container {
    display: flex; /*Coloca como em Colunas*/
-   border: solid 2px red;
+   border: solid 2px;
    align-items: center; /*Alinha tudo bem no centro da tela*/
    justify-content: center; /*Alinha Horizontalmente*/
    height: 100vh; /*Para o ALIGN-ITEMs funcionar, precisa definir como tela inteira*/
+   background-color: #ecf0f1;
 }
 
+.content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center; /*Só funciona se eu definir a altura, caso height*/
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;/*Pega as Primeiras letras e coloca em caixa alta*/
+}
+
+.title-primary {
+    color: #FFF;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 20px; /*Altura de linha*/
+}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid
+}
+
+.btn-primary:hover{
+    background-color: #FFF;
+    color: #58af9b;
+}
+
+.first-content {
+    display: flex;
+}
+
+.first-column {
+    text-align: center;
+    flex: 1 0 auto; /*Puxa a coluna para o centro com proporção 1*/
+    z-index: 10; /*Coloca a cor verde toda para tráz dos caracteres é so funciona com a "POSITION"*/
+}
+
+.second-column {
+    flex:2 0 auto;
+}
+
+.list-social-media {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; /*Para os formulários ficarem como colunas*/
+}
+
+.second-content {
+    position: absolute;
+    display: none;
+}
